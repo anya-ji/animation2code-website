@@ -259,11 +259,11 @@ table.results tbody tr:hover td.best { background: var(--background-accent); }
 }
 .dashboard-cta .button:hover { transform: translateY(-2px); box-shadow: var(--shadow-md); }
 .dashboard-cta .dashboard-note {
-  margin: 1.25rem auto 0;
+  margin: 1.25rem auto 0 !important;
   max-width: 620px;
-  font-size: 0.78rem;
-  line-height: 1.5;
-  color: rgba(255,255,255,0.78);
+  font-size: 0.78rem !important;
+  line-height: 1.5 !important;
+  color: rgba(255,255,255,0.78) !important;
 }
 .dashboard-cta .dashboard-note a { color: #fff; text-decoration: underline; }
 
