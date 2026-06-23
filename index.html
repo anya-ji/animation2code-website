@@ -116,7 +116,7 @@
 
             <div class="is-size-5 publication-authors">
               <span class="author-block"><a href="https://anya-ji.github.io" target="_blank">Anya Ji</a>,</span>
-              <span class="author-block">Abhijith Varma Mudunuri,</span>
+              <span class="author-block"><a href="https://github.com/mabhi02" target="_blank">Abhijith Varma Mudunuri</a>,</span>
               <span class="author-block"><a href="https://davidmchan.github.io" target="_blank">David M. Chan</a>,</span>
               <span class="author-block"><a href="https://www.alanesuhr.com" target="_blank">Alane Suhr</a></span>
             </div>
@@ -134,13 +134,6 @@
                     <span>Paper</span><span class="tag-soon">soon</span>
                   </a>
                 </span>
-                <!-- Dataset -->
-                <span class="link-block">
-                  <a class="external-link button is-normal is-rounded is-soon" aria-disabled="true" tabindex="-1">
-                    <span class="icon"><i class="fas fa-database"></i></span>
-                    <span>Dataset</span><span class="tag-soon">soon</span>
-                  </a>
-                </span>
                 <!-- Code -->
                 <span class="link-block">
                   <a class="external-link button is-normal is-rounded is-soon" aria-disabled="true" tabindex="-1">
@@ -152,7 +145,7 @@
                 <span class="link-block">
                   <a class="external-link button is-normal is-rounded is-soon" aria-disabled="true" tabindex="-1">
                     <span class="icon">🤗</span>
-                    <span>Hugging Face</span><span class="tag-soon">soon</span>
+                    <span>Hugging Face Dataset</span><span class="tag-soon">soon</span>
                   </a>
                 </span>
                 <!-- Dashboard (live) -->
@@ -217,7 +210,7 @@
   <section class="section">
     <div class="container is-max-desktop">
       <div class="has-text-centered">
-        <h2 class="title is-3">Benchmark at a Glance</h2>
+        <h2 class="title is-3">Benchmark Statistics</h2>
       </div>
       <div class="stat-grid">
         <div class="stat-card"><div class="stat-num">1,069</div><div class="stat-label">Animation video–code pairs</div></div>
@@ -265,13 +258,14 @@
         <h2 class="title is-3">Evaluating De-Rendering</h2>
       </div>
       <div class="content has-text-justified" style="max-width:820px;margin:0 auto 2rem;">
-        <p>
-          We evaluate generated animations along two complementary axes. <b>Appearance similarity</b> compares
-          DreamSim embeddings of frames aligned with Dynamic Time Warping, capturing color, shape, and style.
-          <b>Temporal similarity</b> compares motion trajectories (extracted with CoTracker3) via a direction-
-          and speed-aware correlation, aggregated with Chamfer-style matching. Both metrics operate on the cropped
-          animated region so they remain agnostic to absolute on-page positioning.
-        </p>
+        <p>We evaluate generated animations along two complementary axes, both computed on the cropped animated
+           region so they remain agnostic to absolute on-page positioning:</p>
+        <ul>
+          <li><b>Appearance similarity</b> compares DreamSim embeddings of frames aligned with Dynamic Time
+              Warping, capturing color, shape, and style.</li>
+          <li><b>Temporal similarity</b> compares motion trajectories (extracted with CoTracker3) via a direction-
+              and speed-aware correlation, aggregated with Chamfer-style matching.</li>
+        </ul>
       </div>
       <div class="figure-block">
         <img src="static/images/figures/metrics.png" alt="Appearance similarity via DreamSim + DTW, and temporal similarity via tracklet displacement correlation." loading="lazy"/>
@@ -386,7 +380,7 @@
         <h2 class="title is-3">Explore the Benchmark Dashboard</h2>
         <p>Browse rendered model outputs side-by-side with ground truth and inspect per-example metric scores.</p>
         <a href="https://anim2code-dashboard.vercel.app/" target="_blank" class="button is-normal is-rounded">
-          <span class="icon"><i class="fas fa-arrow-up-right-from-square"></i></span>
+          <span class="icon">⭐</span>
           <span>Open the Data Dashboard</span>
         </a>
       </div>
