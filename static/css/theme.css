@@ -59,6 +59,13 @@ body { color: var(--text-primary); }
   letter-spacing: -0.025em;
   color: var(--ink) !important;
 }
+.title-favicon {
+  height: 0.82em;
+  width: auto;
+  vertical-align: -0.06em;
+  margin-right: 0.32em;
+  border-radius: 22%;
+}
 .publication-title .mono {
   font-family: 'JetBrains Mono', 'SF Mono', 'Cascadia Code', monospace;
   color: var(--primary-color);
