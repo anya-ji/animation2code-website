@@ -198,15 +198,16 @@
             <p>
               While recent vision-language models (VLMs) have achieved significant improvements on static
               visual-to-code tasks such as generating code for webpages, charts, or SVGs, it remains unclear
-              whether VLMs are able to recover temporal dynamics when motion is present. To this end, we introduce
-              the <b>animation-to-code</b> task, along with a benchmark, <span class="dnerf">Animation2Code</span>, for
-              evaluating temporal visual reasoning via reconstructing executable web animation code from videos.
-              Animation2Code consists of <b>1,069 web animation videos</b> with diverse visuals and motion patterns,
-              augmented with corresponding HTML/CSS/JavaScript implementations. We further pair the dataset with
-              several novel <b>human-aligned metrics</b> that disentangle visual similarity from temporal alignment
-              when comparing rendered animations to ground-truth samples. We benchmark current SOTA models and show
-              that they <b>struggle with temporal consistency</b>, even when achieving high appearance similarity, and
-              even under fine-tuning and iterative refinement.
+              whether they can recover temporal dynamics when motion is present. To this end, we introduce
+              <span class="dnerf">Animation2Code</span>, a benchmark for evaluating temporal visual reasoning via
+              reconstructing executable web animation code from videos. Animation2Code consists of
+              <b>1,069 web animation videos</b> with diverse visual appearances and motion patterns, paired with
+              corresponding HTML/CSS/JavaScript implementations. We propose two <b>human-aligned metrics</b>,
+              appearance similarity and temporal similarity, which allow us to disentangle visual fidelity from
+              temporal alignment when comparing rendered animations against ground-truth samples. Benchmarking
+              state-of-the-art VLMs on this dataset shows that current VLMs <b>struggle to maintain temporal
+              consistency</b> in reconstruction, even when achieving high appearance similarity, including under
+              finetuning and iterative refinement settings.
             </p>
           </div>
         </div>
