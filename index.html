@@ -54,7 +54,7 @@
   <!-- Critical CSS - Load synchronously -->
   <link rel="stylesheet" href="static/css/bulma.min.css">
   <link rel="stylesheet" href="static/css/index.css">
-  <link rel="stylesheet" href="static/css/theme.css?v=3">
+  <link rel="stylesheet" href="static/css/theme.css?v=4">
 
   <!-- Non-critical CSS - Load asynchronously -->
   <link rel="preload" href="static/css/bulma-carousel.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -212,14 +212,15 @@
   <section class="section">
     <div class="container is-max-desktop">
       <div class="has-text-centered">
-        <h2 class="title is-3">Benchmark Statistics</h2>
+        <h2 class="title is-3">Dataset Statistics</h2>
       </div>
       <div class="stat-grid">
         <div class="stat-card"><div class="stat-num">1,069</div><div class="stat-label">Animation video–code pairs</div></div>
-        <div class="stat-card"><div class="stat-num">355k+</div><div class="stat-label">Lines of ground-truth code</div></div>
+        <div class="stat-card"><div class="stat-num">5.1s</div><div class="stat-label">Average animation length</div></div>
+        <div class="stat-card"><div class="stat-num">355k+</div><div class="stat-label">Total lines of code</div></div>
         <div class="stat-card"><div class="stat-num">515</div><div class="stat-label">Unique CSS properties</div></div>
-        <div class="stat-card"><div class="stat-num">9</div><div class="stat-label">Model / training settings</div></div>
-        <div class="stat-card"><div class="stat-num">≤ 0.31</div><div class="stat-label">Best temporal similarity</div></div>
+        <div class="stat-card"><div class="stat-num">86%</div><div class="stat-label">Pure-CSS animations</div></div>
+        <div class="stat-card"><div class="stat-num">30 FPS</div><div class="stat-label">Rendered at 1024×768</div></div>
       </div>
     </div>
   </section>
