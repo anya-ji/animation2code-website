@@ -4,6 +4,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <!-- Always load at the top: disable browser scroll restoration -->
+  <script>
+    if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+    window.addEventListener('load', function () { window.scrollTo(0, 0); });
+  </script>
+
   <!-- Primary Meta Tags -->
   <meta name="title" content="Animation2Code: Evaluating Temporal Visual Reasoning in Video-to-Code Generation">
   <meta name="description" content="Animation2Code is the first benchmark for de-rendering web animations into executable HTML/CSS/JavaScript. 1,069 video-code pairs and human-aligned metrics show VLMs match appearance but fail at temporal dynamics.">
@@ -219,7 +225,6 @@
         <div class="stat-card"><div class="stat-num">5.1s</div><div class="stat-label">Average animation length</div></div>
         <div class="stat-card"><div class="stat-num">355k+</div><div class="stat-label">Total lines of code</div></div>
         <div class="stat-card"><div class="stat-num">515</div><div class="stat-label">Unique CSS properties</div></div>
-        <div class="stat-card"><div class="stat-num">86%</div><div class="stat-label">Pure-CSS animations</div></div>
         <div class="stat-card"><div class="stat-num">30 FPS</div><div class="stat-label">Rendered at 1024×768</div></div>
       </div>
     </div>
