@@ -46,11 +46,11 @@ function copyBibTeX() {
         navigator.clipboard.writeText(bibtexElement.textContent).then(function() {
             // Success feedback
             button.classList.add('copied');
-            copyText.textContent = 'Cop';
+            if (copyText) copyText.textContent = 'Cop';
             
             setTimeout(function() {
                 button.classList.remove('copied');
-                copyText.textContent = 'Copy';
+                if (copyText) copyText.textContent = 'Copy';
             }, 2000);
         }).catch(function(err) {
             console.error('Failed to copy: ', err);
@@ -63,10 +63,10 @@ function copyBibTeX() {
             document.body.removeChild(textArea);
             
             button.classList.add('copied');
-            copyText.textContent = 'Cop';
+            if (copyText) copyText.textContent = 'Cop';
             setTimeout(function() {
                 button.classList.remove('copied');
-                copyText.textContent = 'Copy';
+                if (copyText) copyText.textContent = 'Copy';
             }, 2000);
         });
     }

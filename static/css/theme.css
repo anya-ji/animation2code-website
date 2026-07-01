@@ -203,6 +203,39 @@ body { color: var(--text-primary); }
 }
 .figure-caption b { color: var(--text-primary); }
 
+/* ---------- BibTeX: small copy button inside the block ---------- */
+.bibtex-wrap { position: relative; }
+.bibtex-wrap pre { margin: 0; }
+.bibtex-wrap .copy-bibtex-btn {
+  position: absolute;
+  top: 0.55rem;
+  right: 0.55rem;
+  z-index: 2;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  gap: 0;
+  font-size: 0.8rem;
+  border-radius: 7px;
+  background: rgba(255, 255, 255, 0.9);
+  color: var(--text-secondary);
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-sm);
+}
+.bibtex-wrap .copy-bibtex-btn:hover {
+  transform: none;
+  background: #fff;
+  color: var(--primary-color);
+  border-color: var(--light-blue);
+  box-shadow: var(--shadow-sm);
+}
+.bibtex-wrap .copy-bibtex-btn.copied {
+  background: #fff;
+  color: #10b981;
+  border-color: #10b981;
+}
+.bibtex-wrap .copy-bibtex-btn.copied i::before { content: "\f00c"; } /* fa-check */
+
 /* ---------- Qualitative video grid ---------- */
 .qual-scroll { overflow-x: auto; padding-bottom: 0.25rem; }
 .qual-table { min-width: 720px; }
