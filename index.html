@@ -60,7 +60,7 @@
   <!-- Critical CSS - Load synchronously -->
   <link rel="stylesheet" href="static/css/bulma.min.css">
   <link rel="stylesheet" href="static/css/index.css">
-  <link rel="stylesheet" href="static/css/theme.css?v=4">
+  <link rel="stylesheet" href="static/css/theme.css?v=5">
 
   <!-- Non-critical CSS - Load asynchronously -->
   <link rel="preload" href="static/css/bulma-carousel.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -343,16 +343,63 @@
       <div class="has-text-centered">
         <h2 class="title is-3">Qualitative Examples</h2>
       </div>
-      <div class="figure-block">
-        <img src="static/images/figures/codepen-XoYpMj-GRgqQqw.png" alt="Qualitative comparison of model outputs against ground truth." loading="lazy" style="margin-bottom:1.5rem;"/>
-        <img src="static/images/figures/codepen-XoYpMj-oavbzK_alt.png" alt="Qualitative comparison of model outputs against ground truth." loading="lazy" style="margin-bottom:1.5rem;"/>
-        <img src="static/images/figures/codepen-XoYpMj-goJmRm.png" alt="Qualitative comparison of model outputs against ground truth." loading="lazy"/>
-        <p class="figure-caption">
-          <b>All models struggle with precise motion and spatial relationships, even when overall appearance is
-          partially correct.</b> Some models capture object appearance (e.g., 3D balls) but reproduce the wrong
-          trajectory or arrangement, while others collapse to static or linear motion.
-        </p>
+      <div class="qual-scroll">
+        <div class="qual-table">
+        <div class="qual-head">
+          <div class="qual-label gt-label">Ground Truth</div>
+          <div class="qual-label">GPT-5.4</div>
+          <div class="qual-label">Gemini-3</div>
+          <div class="qual-label">Claude</div>
+          <div class="qual-label">LLaMA 4</div>
+          <div class="qual-label">Qwen3-VL</div>
+        </div>
+        <div class="qual-row">
+          <div class="qual-cell gt"><video class="qual-video" src="static/videos/codepen-XoYpMj-GRgqQqw_gt.mp4" autoplay muted loop playsinline preload="metadata"></video></div>
+          <div class="qual-cell"><video class="qual-video" src="static/videos/codepen-XoYpMj-GRgqQqw_gpt.mp4" autoplay muted loop playsinline preload="metadata"></video></div>
+          <div class="qual-cell"><video class="qual-video" src="static/videos/codepen-XoYpMj-GRgqQqw_gemini.mp4" autoplay muted loop playsinline preload="metadata"></video></div>
+          <div class="qual-cell"><video class="qual-video" src="static/videos/codepen-XoYpMj-GRgqQqw_claude.mp4" autoplay muted loop playsinline preload="metadata"></video></div>
+          <div class="qual-cell"><video class="qual-video" src="static/videos/codepen-XoYpMj-GRgqQqw_llama.mp4" autoplay muted loop playsinline preload="metadata"></video></div>
+          <div class="qual-cell"><video class="qual-video" src="static/videos/codepen-XoYpMj-GRgqQqw_qwen.mp4" autoplay muted loop playsinline preload="metadata"></video></div>
+        </div>
+        <div class="qual-row">
+          <div class="qual-cell gt"><video class="qual-video" src="static/videos/codepen-XoYpMj-OGwmOV_gt.mp4" autoplay muted loop playsinline preload="metadata"></video></div>
+          <div class="qual-cell"><video class="qual-video" src="static/videos/codepen-XoYpMj-OGwmOV_gpt.mp4" autoplay muted loop playsinline preload="metadata"></video></div>
+          <div class="qual-cell"><video class="qual-video" src="static/videos/codepen-XoYpMj-OGwmOV_gemini.mp4" autoplay muted loop playsinline preload="metadata"></video></div>
+          <div class="qual-cell"><video class="qual-video" src="static/videos/codepen-XoYpMj-OGwmOV_claude.mp4" autoplay muted loop playsinline preload="metadata"></video></div>
+          <div class="qual-cell"><video class="qual-video" src="static/videos/codepen-XoYpMj-OGwmOV_llama.mp4" autoplay muted loop playsinline preload="metadata"></video></div>
+          <div class="qual-cell"><video class="qual-video" src="static/videos/codepen-XoYpMj-OGwmOV_qwen.mp4" autoplay muted loop playsinline preload="metadata"></video></div>
+        </div>
+        <div class="qual-row">
+          <div class="qual-cell gt"><video class="qual-video" src="static/videos/codepen-XoYpMj-YxPQyJ_gt.mp4" autoplay muted loop playsinline preload="metadata"></video></div>
+          <div class="qual-cell"><video class="qual-video" src="static/videos/codepen-XoYpMj-YxPQyJ_gpt.mp4" autoplay muted loop playsinline preload="metadata"></video></div>
+          <div class="qual-cell"><video class="qual-video" src="static/videos/codepen-XoYpMj-YxPQyJ_gemini.mp4" autoplay muted loop playsinline preload="metadata"></video></div>
+          <div class="qual-cell"><video class="qual-video" src="static/videos/codepen-XoYpMj-YxPQyJ_claude.mp4" autoplay muted loop playsinline preload="metadata"></video></div>
+          <div class="qual-cell"><video class="qual-video" src="static/videos/codepen-XoYpMj-YxPQyJ_llama.mp4" autoplay muted loop playsinline preload="metadata"></video></div>
+          <div class="qual-cell"><video class="qual-video" src="static/videos/codepen-XoYpMj-YxPQyJ_qwen.mp4" autoplay muted loop playsinline preload="metadata"></video></div>
+        </div>
+        <div class="qual-row">
+          <div class="qual-cell gt"><video class="qual-video" src="static/videos/codepen-XoYpMj-goJmRm_gt.mp4" autoplay muted loop playsinline preload="metadata"></video></div>
+          <div class="qual-cell"><video class="qual-video" src="static/videos/codepen-XoYpMj-goJmRm_gpt.mp4" autoplay muted loop playsinline preload="metadata"></video></div>
+          <div class="qual-cell"><video class="qual-video" src="static/videos/codepen-XoYpMj-goJmRm_gemini.mp4" autoplay muted loop playsinline preload="metadata"></video></div>
+          <div class="qual-cell"><video class="qual-video" src="static/videos/codepen-XoYpMj-goJmRm_claude.mp4" autoplay muted loop playsinline preload="metadata"></video></div>
+          <div class="qual-cell"><video class="qual-video" src="static/videos/codepen-XoYpMj-goJmRm_llama.mp4" autoplay muted loop playsinline preload="metadata"></video></div>
+          <div class="qual-cell"><video class="qual-video" src="static/videos/codepen-XoYpMj-goJmRm_qwen.mp4" autoplay muted loop playsinline preload="metadata"></video></div>
+        </div>
+        <div class="qual-row">
+          <div class="qual-cell gt"><video class="qual-video" src="static/videos/codepen-XoYpMj-oavbzK_gt.mp4" autoplay muted loop playsinline preload="metadata"></video></div>
+          <div class="qual-cell"><video class="qual-video" src="static/videos/codepen-XoYpMj-oavbzK_gpt.mp4" autoplay muted loop playsinline preload="metadata"></video></div>
+          <div class="qual-cell"><video class="qual-video" src="static/videos/codepen-XoYpMj-oavbzK_gemini.mp4" autoplay muted loop playsinline preload="metadata"></video></div>
+          <div class="qual-cell"><video class="qual-video" src="static/videos/codepen-XoYpMj-oavbzK_claude.mp4" autoplay muted loop playsinline preload="metadata"></video></div>
+          <div class="qual-cell"><video class="qual-video" src="static/videos/codepen-XoYpMj-oavbzK_llama.mp4" autoplay muted loop playsinline preload="metadata"></video></div>
+          <div class="qual-cell"><video class="qual-video" src="static/videos/codepen-XoYpMj-oavbzK_qwen.mp4" autoplay muted loop playsinline preload="metadata"></video></div>
+        </div>
+        </div>
       </div>
+      <p class="figure-caption" style="margin-top:1.25rem;">
+        <b>All models struggle with precise motion and spatial relationships, even when overall appearance is
+        partially correct.</b> Each row shows one example: the ground-truth animation (blue) alongside the
+        reconstructions rendered from each model&rsquo;s generated code.
+      </p>
     </div>
   </section>
 
