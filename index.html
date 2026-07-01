@@ -137,9 +137,10 @@
               <div class="publication-links">
                 <!-- Paper -->
                 <span class="link-block">
-                  <a class="external-link button is-normal is-rounded is-soon" aria-disabled="true" tabindex="-1">
-                    <span class="icon"><i class="fas fa-file-pdf"></i></span>
-                    <span>Paper</span><span class="tag-soon">soon</span>
+                  <a href="https://arxiv.org/abs/2606.28593" target="_blank"
+                     class="external-link button is-normal is-rounded is-live">
+                    <span class="icon"><i class="ai ai-arxiv"></i></span>
+                    <span>Paper</span>
                   </a>
                 </span>
                 <!-- Code -->
@@ -231,34 +232,6 @@
     </div>
   </section>
 
-  <!-- Contributions -->
-  <section class="section hero is-light">
-    <div class="container is-max-desktop">
-      <div class="has-text-centered">
-        <h2 class="title is-3">Key Contributions</h2>
-      </div>
-      <div class="highlight-grid">
-        <div class="highlight-card">
-          <div class="hl-icon"><i class="fas fa-film"></i></div>
-          <h3>A new task &amp; benchmark</h3>
-          <p>The first benchmark for dynamic visual perception through <b>de-rendering</b> web animations into
-             executable code — 1,069 real-world video–code pairs with diverse motion patterns.</p>
-        </div>
-        <div class="highlight-card">
-          <div class="hl-icon"><i class="fas fa-ruler-combined"></i></div>
-          <h3>Human-aligned metrics</h3>
-          <p>An automatic evaluation suite that <b>disentangles appearance from temporal similarity</b>, validated
-             to agree with human preference and to outperform VLM-as-a-judge in each dimension.</p>
-        </div>
-        <div class="highlight-card">
-          <div class="hl-icon"><i class="fas fa-stopwatch"></i></div>
-          <h3>A consistent temporal gap</h3>
-          <p>SOTA VLMs reach near-perfect execution (up to 100%) and strong appearance (up to 0.84), yet temporal
-             similarity stays low (≤ 0.31) across zero-shot, fine-tuning, and refinement.</p>
-        </div>
-      </div>
-    </div>
-  </section>
 
   <!-- The task / metrics -->
   <section class="section">
@@ -422,8 +395,7 @@
         <img src="static/images/figures/human_eval.png" alt="Inter-annotator agreement and ROC-AUC of metrics against human preference." loading="lazy"/>
         <p class="figure-caption">
           (A) Inter-annotator agreement per judgment dimension. (B) ROC-AUC for predicting human preference from
-          metric deltas, VLM annotations, and a joint logistic regression. <b>Our metrics align with human
-          preference better than VLM-as-a-judge in their respective dimensions.</b>
+          metric deltas, VLM annotations, and a joint logistic regression.
         </p>
       </div>
     </div>
@@ -461,7 +433,10 @@
   title         = {Animation2Code: Evaluating Temporal Visual Reasoning in Video-to-Code Generation},
   author        = {Ji, Anya and Mudunuri, Abhijith Varma and Chan, David M. and Suhr, Alane},
   year          = {2026},
-  journal       = {arXiv preprint TBD},
+  journal       = {arXiv preprint arXiv:2606.28593},
+  eprint        = {2606.28593},
+  archivePrefix = {arXiv},
+  url           = {https://arxiv.org/abs/2606.28593},
 }</code></pre>
     </div>
   </section>
