@@ -41,7 +41,7 @@
   <meta name="citation_author" content="Suhr, Alane">
   <meta name="citation_publication_date" content="2026">
 
-  <meta name="theme-color" content="#6d28d9">
+  <meta name="theme-color" content="#2563eb">
 
   <!-- Preconnect for performance -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -60,7 +60,7 @@
   <!-- Critical CSS - Load synchronously -->
   <link rel="stylesheet" href="static/css/bulma.min.css">
   <link rel="stylesheet" href="static/css/index.css">
-  <link rel="stylesheet" href="static/css/theme.css?v=7">
+  <link rel="stylesheet" href="static/css/theme.css?v=10">
 
   <!-- Non-critical CSS - Load asynchronously -->
   <link rel="preload" href="static/css/bulma-carousel.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -76,7 +76,7 @@
   </noscript>
 
   <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
   <!-- Defer non-critical JavaScript -->
   <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -119,7 +119,7 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title"><img src="static/favicon/favicon.svg" alt="" class="title-favicon"><span class="mono">Animation2Code</span></h1>
+            <h1 class="title is-1 publication-title"><img src="static/favicon/logo-animated.svg" alt="" class="title-favicon">Animation2Code</h1>
             <p class="publication-subtitle">Evaluating Temporal Visual Reasoning in Video-to-Code Generation</p>
 
             <div class="is-size-5 publication-authors">
@@ -129,8 +129,8 @@
               <span class="author-block"><a href="https://www.alanesuhr.com" target="_blank">Alane Suhr</a></span>
             </div>
 
-            <div class="publication-authors">
-              <span class="affil-pill">University of California, Berkeley</span>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">University of California, Berkeley</span>
             </div>
 
             <div class="column has-text-centered">
@@ -138,29 +138,30 @@
                 <!-- Paper -->
                 <span class="link-block">
                   <a href="https://arxiv.org/abs/2606.28593" target="_blank"
-                     class="external-link button is-normal is-rounded is-live">
+                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon"><i class="ai ai-arxiv"></i></span>
                     <span>Paper</span>
                   </a>
                 </span>
                 <!-- Code -->
                 <span class="link-block">
-                  <a class="external-link button is-normal is-rounded is-soon" aria-disabled="true" tabindex="-1">
+                  <a class="external-link button is-normal is-rounded is-dark is-soon" aria-disabled="true" tabindex="-1">
                     <span class="icon"><i class="fab fa-github"></i></span>
                     <span>Code</span><span class="tag-soon">soon</span>
                   </a>
                 </span>
                 <!-- Hugging Face -->
                 <span class="link-block">
-                  <a class="external-link button is-normal is-rounded is-soon" aria-disabled="true" tabindex="-1">
+                  <a href="https://huggingface.co/datasets/anim2code/dataset" target="_blank"
+                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">🤗</span>
-                    <span>Hugging Face Dataset</span><span class="tag-soon">soon</span>
+                    <span>Hugging Face Dataset</span>
                   </a>
                 </span>
                 <!-- Dashboard (live) -->
                 <span class="link-block">
                   <a href="https://anim2code-dashboard.vercel.app/" target="_blank"
-                     class="external-link button is-normal is-rounded is-live">
+                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">⭐</span>
                     <span>Benchmark Dashboard</span>
                   </a>
@@ -215,23 +216,6 @@
       </div>
     </div>
   </section>
-
-  <!-- Key stats -->
-  <section class="section">
-    <div class="container is-max-desktop">
-      <div class="has-text-centered">
-        <h2 class="title is-3">Dataset Statistics</h2>
-      </div>
-      <div class="stat-grid">
-        <div class="stat-card"><div class="stat-num">1,069</div><div class="stat-label">Animation video–code pairs</div></div>
-        <div class="stat-card"><div class="stat-num">5.1s</div><div class="stat-label">Average animation length</div></div>
-        <div class="stat-card"><div class="stat-num">355k+</div><div class="stat-label">Total lines of code</div></div>
-        <div class="stat-card"><div class="stat-num">515</div><div class="stat-label">Unique CSS properties</div></div>
-        <div class="stat-card"><div class="stat-num">30 FPS</div><div class="stat-label">Rendered at 1024×768</div></div>
-      </div>
-    </div>
-  </section>
-
 
   <!-- The task / metrics -->
   <section class="section">
@@ -300,7 +284,7 @@
       </div>
       <p class="results-note">
         Exec (%) is the share of examples whose generated code runs successfully. Best score per metric in
-        <b style="color:var(--primary-color)">bold</b>.
+        <b style="color:var(--primary-color)">bold blue</b>.
       </p>
       <div class="takeaway">
         <b>Takeaway.</b> Execution is nearly saturated and appearance is strong, but <b>temporal similarity remains
@@ -406,7 +390,7 @@
     <div class="container is-max-desktop">
       <div class="dashboard-cta">
         <h2 class="title is-3">Explore the Benchmark Dashboard</h2>
-        <p>Browse rendered model outputs side-by-side with ground truth and inspect per-example metric scores.</p>
+        <p>Browse ground truth data, rendered model outputs, and inspect per-example metric scores.</p>
         <a href="https://anim2code-dashboard.vercel.app/" target="_blank" class="button is-normal is-rounded">
           <span class="icon">⭐</span>
           <span>Go to Dashboard</span>
@@ -423,7 +407,7 @@
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <div class="bibtex-header">
-        <h2 class="title">BibTeX</h2>
+        <h2 class="title is-3">BibTeX</h2>
         <button class="copy-bibtex-btn" onclick="copyBibTeX()" title="Copy BibTeX to clipboard">
           <i class="fas fa-copy"></i>
           <span class="copy-text">Copy</span>
