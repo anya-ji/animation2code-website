@@ -232,25 +232,28 @@
           </thead>
           <tbody>
             <tr class="group-row"><td colspan="5">Native video input</td></tr>
-            <tr><td class="model">Gemini-3 Flash Preview</td><td>24</td><td>99.1</td><td>0.80</td><td class="best">0.31</td></tr>
-            <tr><td class="model">Gemini-3 Flash Preview</td><td>2</td><td>98.1</td><td>0.80</td><td>0.30</td></tr>
-            <tr><td class="model">Qwen3-VL-8B-Instruct</td><td>24</td><td>84.6</td><td>0.69</td><td>0.24</td></tr>
+            <tr><td class="model">Gemini 3 Flash Preview</td><td>2</td><td>98.1</td><td>0.80</td><td>0.30</td></tr>
+            <tr><td class="model">Gemini 3 Flash Preview</td><td>4</td><td>98.6</td><td>0.81</td><td>0.31</td></tr>
+            <tr><td class="model">Gemini 3 Flash Preview</td><td>16</td><td>99.5</td><td>0.80</td><td class="best">0.32</td></tr>
             <tr><td class="model">Qwen3-VL-8B-Instruct</td><td>2</td><td>85.5</td><td>0.67</td><td>0.23</td></tr>
+            <tr><td class="model">Qwen3-VL-8B-Instruct</td><td>4</td><td>82.2</td><td>0.68</td><td>0.25</td></tr>
+            <tr><td class="model">Qwen3-VL-8B-Instruct</td><td>24</td><td>84.6</td><td>0.69</td><td>0.24</td></tr>
 
-            <tr class="group-row"><td colspan="5">Image-frame input</td></tr>
+            <tr class="group-row"><td colspan="5">Image frames input</td></tr>
             <tr><td class="model">GPT-5.4</td><td>2</td><td class="best">100.0</td><td class="best">0.84</td><td>0.29</td></tr>
-            <tr><td class="model">Gemini-3 Flash Preview</td><td>2</td><td class="best">100.0</td><td>0.80</td><td>0.30</td></tr>
+            <tr><td class="model">Gemini 3 Flash Preview</td><td>2</td><td class="best">100.0</td><td>0.80</td><td>0.30</td></tr>
             <tr><td class="model">Claude Sonnet 4.6</td><td>2</td><td>99.5</td><td>0.82</td><td>0.29</td></tr>
             <tr><td class="model">LLaMA 4 Scout</td><td>2</td><td>97.7</td><td>0.62</td><td>0.21</td></tr>
             <tr><td class="model">Qwen3-VL-8B-Instruct</td><td>2</td><td>80.4</td><td>0.70</td><td>0.24</td></tr>
 
-            <tr class="group-row"><td colspan="5">SFT / refinement (Qwen3-VL-8B, video input)</td></tr>
-            <tr><td class="model">+ LoRA</td><td>2</td><td>98.6</td><td>0.43</td><td>0.09</td></tr>
-            <tr><td class="model">+ Full SFT</td><td>2</td><td>94.9</td><td>0.46</td><td>0.08</td></tr>
+            <tr class="group-row"><td colspan="5">SFT / refinement (Qwen3-VL-8B-Instruct, video input)</td></tr>
+            <tr><td class="model">+ LoRA</td><td>2</td><td>86.4</td><td>0.59</td><td>0.22</td></tr>
+            <tr><td class="model">+ Full SFT</td><td>2</td><td>87.4</td><td>0.56</td><td>0.21</td></tr>
             <tr><td class="model">+ Iterative Refinement</td><td>2</td><td>85.5</td><td>0.73</td><td>0.28</td></tr>
           </tbody>
         </table>
-        <p class="table-note">Exec (%) is the share of examples whose generated code runs successfully. Best score per metric in <span class="best-key">bold blue</span>.</p>
+        <p class="table-note">For Gemini and Qwen3-VL, we report three input FPS settings: 2 FPS and the best input FPS for each metric based on a full FPS sweep from 0.5 to 24 FPS.
+          Exec (%) is the share of examples whose generated code runs successfully. Best score per metric in <span class="best-key">bold blue</span>.</p>
       </div>
       <div class="content prose">
         <p>
