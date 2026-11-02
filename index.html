@@ -258,8 +258,8 @@
       <div class="content prose">
         <p>
           <b>Takeaway.</b> Execution is nearly saturated and appearance is strong, but <b>temporal similarity remains
-          uniformly low across every model and training setting</b> — high appearance does not translate into faithful
-          motion. Richer temporal signal (native video, higher FPS) yields only marginal gains.
+          uniformly low across every model and training setting</b>. High appearance similarity does not translate into
+          faithful motion reconstruction. Richer temporal signal (native video, higher FPS) yields only marginal gains.
         </p>
       </div>
     </div>
@@ -349,10 +349,10 @@
         <p>
           We collected <b>600 pairwise preference comparisons</b> from 65 Prolific annotators across overall quality,
           appearance, and temporal similarity. Inter-annotator agreement is strong for overall and appearance
-          (Krippendorff's α = 0.81) and lower but reliable for temporal (0.73) — motion is inherently harder to judge.
-          The appearance metric achieves strong agreement with human preferences, matching or outperforming both
-          VLM-based baselines across all three dimensions. Combining both metrics with logistic regression (Joint LR)
-          achieves best agreement with human annotations across all dimensions.
+          (Krippendorff's α = 0.81) and lower but reliable for temporal (0.73), as motion is inherently harder to judge.
+          Appearance and temporal similarity capture complementary aspects of animation quality. Combining both metrics
+          with logistic regression (Joint LR) achieves best agreement with human annotations across all dimensions,
+          without relying on VLM-based judging.
         </p>
       </div>
       <figure class="figure-block">
