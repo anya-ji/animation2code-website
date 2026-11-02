@@ -350,15 +350,16 @@
           We collected <b>600 pairwise preference comparisons</b> from 65 Prolific annotators across overall quality,
           appearance, and temporal similarity. Inter-annotator agreement is strong for overall and appearance
           (Krippendorff's α = 0.81) and lower but reliable for temporal (0.73) — motion is inherently harder to judge.
-          Our automatic metrics predict human preference better than a VLM-as-a-judge baseline in their respective
-          dimensions.
+          The appearance metric achieves strong agreement with human preferences, matching or outperforming both
+          VLM-based baselines across all three dimensions. Combining both metrics with logistic regression (Joint LR)
+          achieves best agreement with human annotations across all dimensions.
         </p>
       </div>
       <figure class="figure-block">
-        <img src="static/images/figures/human_eval.png" alt="Inter-annotator agreement and ROC-AUC of metrics against human preference." loading="lazy"/>
+        <img src="static/images/figures/human_eval.png?v=2" alt="Inter-annotator agreement and ROC-AUC of metrics against human preference." loading="lazy"/>
         <figcaption class="figure-caption">
           (A) Inter-annotator agreement per judgment dimension. (B) ROC-AUC for predicting human preference from
-          metric deltas, VLM annotations, and a joint logistic regression.
+          metric deltas, two VLM-based baselines (VLM Judge and WebVR-IM), and a joint logistic regression.
         </figcaption>
       </figure>
     </div>
